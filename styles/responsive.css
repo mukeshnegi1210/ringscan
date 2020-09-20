@@ -1,0 +1,209 @@
+@media(max-width:991px) {
+    header .primary-menu ul li a {
+        font-size: 16px;
+    }
+    .banner {
+        height: 700px;
+    }
+    .banner .banner-content {
+        padding-left: 400px;
+        padding-right: 20px;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content p {
+        max-width: 100%;
+    }
+    .banner .banner-content h1 {
+        font-size: 35px;
+    }
+    .customer-aquisition {
+        background-size: contain;
+    }
+    .leads h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .leads p {
+        font-size: 16px;
+    }
+    .leads .lead-content {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:767px) {
+    h2.main-title {
+        font-size: 30px;
+    }
+    h2.title-2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    h2.title-2 {
+        text-align: center;
+    }
+    h2.title-2:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sub-heading {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    header {
+        z-index: 9999;
+    }
+    .primary-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+        background: linear-gradient(180deg, rgba(231, 57, 126, 1) 0%, rgba(95, 34, 129, 1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 300ms ease-in-out;
+    }
+    .primary-menu.active {
+        left: 0;
+    }
+    .primary-menu ul {
+        padding: 0;
+    }
+    header .primary-menu ul li {
+        padding: 10px 0;
+    }
+    header .primary-menu ul li a {
+        font-size: 20px;
+    }
+    .menu-close,
+    .menu-open {
+        display: inline-block;
+    }
+    header .logo {
+        max-width: 150px;
+        flex: 0 0 150px;
+    }
+    header .header-action {
+        margin-right: 20px;
+    }
+    header .header-action .btn-secondary {
+        min-width: auto;
+        padding: 5px 20px;
+    }
+    .banner {
+        height: auto;
+    }
+    .banner .banner-content {
+        position: static;
+        top: 0;
+        transform: none;
+        padding: 100px 15px 50px;
+    }
+    .banner .banner-content h1 {
+        font-size: 30px;
+        max-width: none;
+    }
+    .banner .banner-content p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .banner-mobile {
+        position: relative;
+        top: 0;
+        max-width: 365px;
+    }
+    .banner-mobile-content {
+        max-width: 50%;
+        top: 80px;
+    }
+    .banner-mobile-content h3 {
+        font-size: 25px;
+    }
+    .customer-aquisition {
+        min-height: 500px;
+    }
+    .customer-aquisition .content p {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .customer-aquisition .content {
+        max-width: 100%;
+    }
+    .about-us {
+        padding-bottom: 0;
+    }
+    .about-us-inner .about-box {
+        margin-bottom: 150px !important;
+    }
+    .industries-list .col-md {
+        border-right: 0;
+    }
+    .industries-list .industry-box {
+        padding: 30px 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .industries-list .col-md:last-child .industry-box {
+        border-bottom: 0;
+    }
+    .industries-list .industry-box p {
+        margin-bottom: 0;
+    }
+    .industries-list .industry-box [data-aos-delay] {
+        transition-delay: 0s !important;
+    }
+    .footer-bottom-inner {
+        flex-wrap: wrap;
+    }
+    .footer-bottom-inner .footer-bottom-left,
+    .footer-bottom-inner .footer-bottom-right {
+        flex: 0 0 100%;
+    }
+    .footer-content-box {
+        padding-bottom: 20px;
+    }
+    .main {
+        padding: 30px 0;
+    }
+}
+
+
+/* mobile devices */
+
+@media(max-width:479px) {
+    body {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    h2.main-title {
+        font-size: 25px;
+        line-height: 1.2;
+        padding-bottom: 10px;
+    }
+    header .header-action {
+        margin-right: 10px;
+    }
+    .leads h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .leads p {
+        text-align: center;
+    }
+    .banner.banner-second .banner-content h1 {
+        font-size: 30px;
+    }
+    .cookies-section .cookies-content {
+        max-width: 90%;
+    }
+    .cookies-content .btn-secondary,
+    .cookies-content .btn {
+        padding: 5px 15px;
+        min-width: auto;
+        max-height: 34px;
+    }
+}

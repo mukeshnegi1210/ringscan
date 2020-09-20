@@ -276,11 +276,10 @@ header .primary-menu ul li a {
     max-width: 75%;
     line-height: 1.5;
 }
-.banner .banner-content .btn-secondary{
+
+.banner .banner-content .btn-secondary {
     margin-top: 20px;
 }
-
-
 
 .contact-us {
     padding: 75px 0;
@@ -476,12 +475,15 @@ footer .footer-contacts ul li span {
 }
 
 .banner.banner-second {
+    background: rgb(35, 61, 226);
+    background: linear-gradient(180deg, rgba(231, 57, 126, 1) 0%, rgba(95, 34, 129, 1) 100%);
     height: auto;
 }
 
 .banner.banner-second .banner-content {
-    padding-top: 100px;
-    padding-bottom: 40px;
+    position: static;
+    transform: none;
+    padding: 125px 0 75px;
 }
 
 .banner.banner-second .banner-content h1 {
@@ -639,7 +641,6 @@ footer .footer-contacts ul li span {
 }
 
 .about-us-inner .about-box {
-    /* border-right: 1px solid #d63e84; */
     margin-bottom: 150px;
     background-color: #ffffff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -647,11 +648,6 @@ footer .footer-contacts ul li span {
     text-align: center;
     border-radius: 20px;
 }
-
-
-/* .about-us-inner .row .col-md-4:last-child .about-box {
-    border-right: 0;
-} */
 
 .about-us-inner .about-box h4 {
     margin: 20px 0;
@@ -674,6 +670,3 @@ footer .footer-contacts ul li span {
 .about-us-inner .about-box .img-wrapper img {
     max-width: 75px;
 }
-
-
-/* contact us starts  */

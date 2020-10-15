@@ -335,16 +335,16 @@ header .primary-menu ul li a {
 
 .banner-mobile-content h3 {
     color: #ffffff;
-    animation: moving 6s infinite linear;
+    animation: moving 4s infinite linear ;
     white-space: nowrap;
 }
 
 @keyframes moving {
     0% {
-        transform: translateX(150%);
+        transform: translateX(130%);
     }
     100% {
-        transform: translateX(-150%);
+        transform: translateX(-140%);
     }
 }
 
@@ -635,7 +635,7 @@ footer .footer-contacts ul li span {
 
 .customer-aquisition .content {
     max-width: 50%;
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .88);
     padding: 20px;
     border-radius: 10px;
 }
@@ -644,6 +644,11 @@ footer .footer-contacts ul li span {
     font-size: 20px;
 }
 
+.customer-aquisition .content-bottom{
+    margin-top: 50px;
+    display:flex;
+    justify-content: flex-end;
+}
 .customer-aquisition-bottom {
     position: absolute;
     top: 100%;

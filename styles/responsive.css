@@ -151,6 +151,7 @@
         position: relative;
         top: 0;
         max-width: 365px;
+        margin: 0 auto;
     }
     .banner-mobile-content {
         max-width: 60%;
@@ -161,6 +162,7 @@
     }
     .customer-aquisition {
         min-height: 500px;
+        margin-bottom: 142px;
     }
     .customer-aquisition .content p {
         font-size: 18px;

@@ -24,6 +24,9 @@
     .banner .banner-content .banner-top-content p{
         max-width: 100%;
     }
+    .banner-mobile-content {
+        max-width: 60%;
+    }
     .customer-aquisition {
         background-size: contain;
     }
@@ -150,7 +153,7 @@
         max-width: 365px;
     }
     .banner-mobile-content {
-        max-width: 50%;
+        max-width: 60%;
         top: 80px;
     }
     .banner-mobile-content h3 {

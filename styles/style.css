@@ -22,6 +22,11 @@ body {
     color: #444444;
     overflow-x: hidden;
     background-color: #fbfbfd;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
 }
 
 .container {
@@ -100,9 +105,18 @@ h2.title-2:after {
     margin-bottom: 30px;
 }
 
+b,
+strong {
+    font-weight: bold;
+}
+
 ul,
 ol {
     list-style: none;
+}
+
+.text-pink {
+    color: #ca00de;
 }
 
 .btn {
@@ -148,7 +162,7 @@ img {
 
 header {
     position: relative;
-    z-index: 99;
+    z-index: 999;
     position: absolute;
     top: 0;
     left: 0;
@@ -156,7 +170,6 @@ header {
 }
 
 header.fixed-header {
-    /* background: linear-gradient(45deg, rgba(29, 200, 205), rgb(4, 169, 109)); */
     background: linear-gradient(45deg, #E91E63 0%, #213d8c 100%);
     transition: all 0.5s;
     position: fixed;
@@ -207,7 +220,7 @@ header .primary-menu ul li a {
 }
 
 .banner {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background: url(../images/banner-1.png) no-repeat center;
     background-size: cover;
@@ -224,10 +237,87 @@ header .primary-menu ul li a {
     opacity: .95;
 }
 
-.banner-mobile {
+.banner .banner-content {
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    padding-top: 125px;
+}
+
+.banner .banner-content .banner-top-content {
+    padding-bottom: 20px;
+}
+
+.banner .banner-content .banner-top-content h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    max-width: 95%;
+}
+
+.banner .banner-content .banner-top-content p {
+    max-width: 85%;
+    line-height: 1.5;
+}
+
+.banner .banner-content .banner-top-content .btn-secondary {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.banner .banner-content .banner-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-bottom-content .banner-bottom-left {
+    flex: 0 0 49%;
+    max-width: 49%;
+}
+
+.banner-bottom-content .banner-bottom-right {
+    flex: 0 0 49%;
+    max-width: 49%;
+    text-align: center;
+}
+
+.banner-bottom-content .banner-bottom-right .banner-features {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.banner-bottom-right .banner-features li {
+    position: relative;
+}
+
+.banner-bottom-right .banner-features li+li {
+    margin-top: 40px;
+}
+
+.banner-bottom-right .banner-features li img {
+    max-width: 300px;
+}
+
+.banner-bottom-right .banner-features li .text {
     position: absolute;
-    bottom: 0;
-    left: 0%;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.banner-mobile {
+    position: relative;
+}
+
+.banner-mobile .banner-mobile-inner {
+    transform: scale(1) translateZ(-22rem) perspective(280rem) rotateY(20deg) rotateX(20deg) rotate(-3deg);
+}
+
+.banner-mobile .banner-mobile-inner img {
+    max-width: 90%;
 }
 
 .banner-mobile-content {
@@ -235,9 +325,9 @@ header .primary-menu ul li a {
     z-index: 99;
     background: transparent;
     width: 100%;
-    left: 30%;
-    top: 50px;
-    max-width: 54%;
+    left: 20%;
+    top: 100px;
+    max-width: 50%;
     padding: 20px;
     overflow: hidden;
     color: #ffffff;
@@ -246,6 +336,7 @@ header .primary-menu ul li a {
 .banner-mobile-content h3 {
     color: #ffffff;
     animation: moving 6s infinite linear;
+    white-space: nowrap;
 }
 
 @keyframes moving {
@@ -255,30 +346,6 @@ header .primary-menu ul li a {
     100% {
         transform: translateX(-150%);
     }
-}
-
-.banner .banner-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-    z-index: 99;
-    padding-left: 35%;
-}
-
-.banner .banner-content h1 {
-    margin-bottom: 20px;
-    font-size: 40px;
-    max-width: 80%;
-}
-
-.banner .banner-content p {
-    max-width: 75%;
-    line-height: 1.5;
-}
-
-.banner .banner-content .btn-secondary {
-    margin-top: 20px;
 }
 
 .contact-us {
@@ -558,18 +625,32 @@ footer .footer-contacts ul li span {
 /* acquisition section */
 
 .customer-aquisition {
-    min-height: 100vh;
+    min-height: 650px;
     padding: 50px 0 100px;
     background: url(../images/abstract-wave.jpg.png) no-repeat center bottom;
     background-size: 100% 90%;
+    position: relative;
+    margin-bottom: 150px;
 }
 
 .customer-aquisition .content {
     max-width: 50%;
+    background: rgba(255, 255, 255, .8);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .customer-aquisition .content p {
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.customer-aquisition-bottom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+   
 }
 
 
@@ -595,14 +676,8 @@ footer .footer-contacts ul li span {
     transform: skewY(-2deg);
 }
 
-.industries .industries-list {
-    margin-top: 50px;
-    padding: 30px 0;
-}
-
-.industries-list .industry-box .img-wrapper {
-    text-align: center;
-    margin-bottom: 20px;
+.industries .bottom {
+    padding-top: 30px;
 }
 
 .industries-list .col-md {
@@ -613,8 +688,17 @@ footer .footer-contacts ul li span {
     border-right: 0;
 }
 
+.industries-list .industry-box .img-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 .industries-list .industry-box .img-wrapper img {
-    max-width: 75px;
+    max-width: 90px;
 }
 
 .industries .industries-list [data-aos=fade-right] {
@@ -663,10 +747,6 @@ footer .footer-contacts ul li span {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background: linear-gradient(45deg, #E91E63 0%, #213d8c 100%);
+    /* background: linear-gradient(45deg, #E91E63 0%, #213d8c 100%); */
     margin-top: -115px;
-}
-
-.about-us-inner .about-box .img-wrapper img {
-    max-width: 75px;
 }

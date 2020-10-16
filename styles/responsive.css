@@ -172,6 +172,10 @@
     .customer-aquisition .content {
         max-width: 100%;
     }
+    .customer-aquisition .img-box{
+        height: 240px;
+        margin-top: 0;
+    }
     .about-us .lead{
         text-align: justify;
     }

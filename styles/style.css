@@ -14,9 +14,11 @@
 /*=================================
              General CSS
 ================================ */
-html{
+
+html {
     font-size: 14px;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 25px;
@@ -282,11 +284,13 @@ header .primary-menu ul li a {
     flex: 0 0 63%;
     max-width: 63%;
     text-align: center;
-;
+    ;
 }
-.banner-bottom-content .banner-bottom-right h2{
+
+.banner-bottom-content .banner-bottom-right h2 {
     font-size: 32px;
 }
+
 .banner-bottom-content .banner-bottom-right .banner-features {
     padding: 35px 0;
     text-align: center;
@@ -341,7 +345,7 @@ header .primary-menu ul li a {
 
 .banner-mobile-content h3 {
     color: #ffffff;
-    animation: moving 4s infinite linear ;
+    animation: moving 4s infinite linear;
     white-space: nowrap;
 }
 
@@ -633,15 +637,29 @@ footer .footer-contacts ul li span {
 .customer-aquisition {
     min-height: 650px;
     padding: 50px 0 100px;
-    background: url(../images/abstract-wave.jpg.png) no-repeat center bottom;
-    background-size: 100% 90%;
+    /* background: url(../images/abstract-wave.jpg.png) no-repeat center bottom; */
+    /* background-size: 100% 90%; */
     position: relative;
     margin-bottom: 150px;
 }
 
+.customer-aquisition .img-box {
+    height: 400px;
+    margin-top: -150px;
+}
+
+.customer-aquisition .img-box img {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    object-fit: 100%;
+    /* /object-position: center; */
+
+}
+
 .customer-aquisition .content {
-    max-width: 50%;
-    background: rgba(255, 255, 255, .88);
+    max-width: 45%;
+    /* background: rgba(255, 255, 255, .88); */
     padding: 20px;
     border-radius: 10px;
 }
@@ -650,18 +668,18 @@ footer .footer-contacts ul li span {
     font-size: 20px;
 }
 
-.customer-aquisition .content-bottom{
-    margin-top: 50px;
-    display:flex;
+.customer-aquisition .content-bottom {
+    /* margin-top: 50px; */
+    display: flex;
     justify-content: flex-end;
 }
+
 .customer-aquisition-bottom {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     padding: 20px;
-   
 }
 
 

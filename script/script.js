@@ -2,7 +2,7 @@ $(function () {
     //   page scroll on primary menu  click 
     $('.primary-menu  ul li a').click(function () {
         get_scroll_id = $(this).attr('data-scroll');
-$('.primary-menu').removeClass('active');
+        $('.primary-menu').removeClass('active');
         $("html, body").animate({
             scrollTop: $(get_scroll_id).offset().top - 75
         }, 600);
@@ -119,7 +119,29 @@ $('.primary-menu').removeClass('active');
 
 
 
-    // animation
+    // moving text effect banner===============
+    window.requestAnimationFrame = (function () {
+        return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+    })();
+
+    var speed = 4000;
+    (function currencySlide() {
+        var currencyPairWidth = $('.banner-mobile-content h3 span:first-child').outerWidth();
+        $(".banner-mobile-content h3").animate({ marginLeft: -currencyPairWidth }, speed, 'linear', function () {
+            $(this).css({ marginLeft: 0 }).find("span:last").after($(this).find("span:first"));
+        });
+        requestAnimationFrame(currencySlide);
+    })();
+
+
+
+
+    //page animations
 
     AOS.init({
         delay: 200,

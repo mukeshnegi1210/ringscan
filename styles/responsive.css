@@ -154,7 +154,8 @@
         margin: 0 auto;
     }
     .banner-mobile-content {
-        max-width: 60%;
+        max-width: 75%;
+        left: 12%;
         top: 80px;
     }
     .banner-mobile-content h3 {

@@ -163,11 +163,11 @@
     }
     .customer-aquisition {
         min-height: 500px;
-        margin-bottom: 142px;
+        /* margin-bottom: 142px; */
     }
     .customer-aquisition .content p {
-        font-size: 18px;
-        line-height: 1.5;
+        /* font-size: 18px;
+        line-height: 1.5; */
         text-align: justify;
     }
     .customer-aquisition .content {
@@ -225,7 +225,7 @@
 
 @media(max-width:479px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 22px;
     }
     h2, h2.main-title {

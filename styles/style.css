@@ -22,7 +22,7 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 18px;
     color: #444444;
     overflow-x: hidden;
     background-color: #fbfbfd;
@@ -56,11 +56,11 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 h2.main-title {
@@ -666,9 +666,9 @@ footer .footer-contacts ul li span {
     border-radius: 10px;
 }
 
-.customer-aquisition .content p {
+/* .customer-aquisition .content p {
     font-size: 20px;
-}
+} */
 
 .customer-aquisition .content-bottom {
     /* margin-top: 50px; */

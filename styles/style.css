@@ -271,7 +271,7 @@ header .primary-menu ul li a {
 
 .banner .banner-content .banner-bottom-content {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -284,7 +284,9 @@ header .primary-menu ul li a {
     flex: 0 0 63%;
     max-width: 63%;
     text-align: center;
-    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .banner-bottom-content .banner-bottom-right h2 {
@@ -301,11 +303,11 @@ header .primary-menu ul li a {
 }
 
 .banner-bottom-right .banner-features li+li {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .banner-bottom-right .banner-features li img {
-    max-width: 200px;
+    max-width: 275px;
 }
 
 .banner-bottom-right .banner-features li .text {
@@ -654,7 +656,6 @@ footer .footer-contacts ul li span {
     width: 100%;
     object-fit: 100%;
     /* /object-position: center; */
-
 }
 
 .customer-aquisition .content {

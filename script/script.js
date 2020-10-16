@@ -119,28 +119,12 @@ $(function () {
 
 
 
-    // moving text effect banner===============
-    window.requestAnimationFrame = (function () {
-        return window.requestAnimationFrame ||
-            window.webkitRequestAnimationFrame ||
-            window.mozRequestAnimationFrame ||
-            function (callback) {
-                window.setTimeout(callback, 1000 / 60);
-            };
-    })();
-
-    var speed = 4000;
-    (function currencySlide() {
-        var currencyPairWidth = $('.banner-mobile-content h3 span:first-child').outerWidth();
-        $(".banner-mobile-content h3").animate({ marginLeft: -currencyPairWidth }, speed, 'linear', function () {
-            $(this).css({ marginLeft: 0 }).find("span:last").after($(this).find("span:first"));
-        });
-        requestAnimationFrame(currencySlide);
-    })();
+    // // moving text effect banner===============
+    $('.banner-mobile-content h3').width($('.banner-mobile-content h3 span:first-child').width());
 
 
 
-
+    
     //page animations
 
     AOS.init({

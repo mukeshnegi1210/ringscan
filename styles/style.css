@@ -288,6 +288,7 @@ header .primary-menu ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 30px 0;
 }
 
 .banner-bottom-content .banner-bottom-right h2 {

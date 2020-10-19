@@ -294,13 +294,14 @@ header .primary-menu ul li a {
 }
 
 .banner-bottom-content .banner-bottom-right .banner-features {
-    /* padding: 35px 0; */
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 0;
+     padding-bottom: 20px;
+
 }
 
 .banner-bottom-right .banner-features li {

@@ -245,7 +245,7 @@ header .primary-menu ul li a {
     position: relative;
     width: 100%;
     z-index: 99;
-    padding-top: 125px;
+    padding-top: 140px;
 }
 
 .banner .banner-content .banner-top-content {
@@ -300,12 +300,17 @@ header .primary-menu ul li a {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 0;
-     padding-bottom: 20px;
-
+    padding-bottom: 20px;
 }
 
 .banner-bottom-right .banner-features li {
     position: relative;
+}
+
+.banner-bottom-right .banner-features li:last-child {
+    position: relative;
+    top: -18px;
+
 }
 
 .banner-bottom-right .banner-features li+li {
@@ -760,13 +765,12 @@ footer .footer-contacts ul li span {
 }
 
 .about-us {
-    padding: 50px 0;
+    padding: 70px 0 50px 0;
     background-color: #eff5f5;
 }
 
 .about-us-inner {
     margin-top: 140px;
-
 }
 
 .about-us-inner .about-box {
@@ -794,10 +798,12 @@ footer .footer-contacts ul li span {
     margin: 0 auto;
     margin-top: -115px;
 }
-.about-us .bottom{
-    margin-top: 50px;
+
+.about-us .bottom {
+    margin-top: 60px;
 }
-.about-us .bottom h2{
+
+.about-us .bottom h2 {
     margin-top: 50px;
     margin-bottom: 0;
 }

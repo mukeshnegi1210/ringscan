@@ -290,6 +290,7 @@ header .primary-menu ul li a {
 
 .banner-bottom-content .banner-bottom-right h2 {
     font-size: 32px;
+    margin-bottom: 0;
 }
 
 .banner-bottom-content .banner-bottom-right .banner-features {
@@ -299,6 +300,7 @@ header .primary-menu ul li a {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 .banner-bottom-right .banner-features li {

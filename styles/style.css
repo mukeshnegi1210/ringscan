@@ -245,7 +245,7 @@ header .primary-menu ul li a {
     position: relative;
     width: 100%;
     z-index: 99;
-    padding-top: 140px;
+    padding-top: 155px;
 }
 
 .banner .banner-content .banner-top-content {
@@ -328,6 +328,7 @@ header .primary-menu ul li a {
     width: 100%;
     transform: translate(-50%, -50%);
     color: #ffffff;
+    margin-bottom: 0;
 }
 
 .banner-mobile {
@@ -671,7 +672,7 @@ footer .footer-contacts ul li span {
 /* acquisition section */
 
 .customer-aquisition {
-    padding: 50px 0;
+    padding: 50px 0 25px;
     position: relative;
 }
 
@@ -760,8 +761,10 @@ footer .footer-contacts ul li span {
     transform: translateZ(0);
 }
 
-.industries-list .industry-box p {
+.industries-list .industry-box h4 {
     text-align: center;
+    color: #ffffff;
+    margin-bottom: 0;
 }
 
 .about-us {
@@ -804,6 +807,6 @@ footer .footer-contacts ul li span {
 }
 
 .about-us .bottom h2 {
-    margin-top: 50px;
+    margin-top: 45px;
     margin-bottom: 0;
 }

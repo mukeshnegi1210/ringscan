@@ -710,9 +710,14 @@ footer .footer-contacts ul li span {
 .industries {
     color: #ffffff;
 }
-
+.industries .main-title span{
+    margin-bottom: 40px;
+    display: block;
+}
 .industries .main-title:after {
     background: #ffffff;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .industries .industries-inner {
@@ -728,7 +733,7 @@ footer .footer-contacts ul li span {
 }
 
 .industries .bottom {
-    padding-top: 30px;
+    margin-top: 40px;
 }
 
 .industries-list .col-md {

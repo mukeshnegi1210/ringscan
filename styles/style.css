@@ -310,7 +310,6 @@ header .primary-menu ul li a {
 .banner-bottom-right .banner-features li:last-child {
     position: relative;
     top: -18px;
-
 }
 
 .banner-bottom-right .banner-features li+li {
@@ -710,19 +709,20 @@ footer .footer-contacts ul li span {
 .industries {
     color: #ffffff;
 }
-.industries .main-title span{
+
+.industries .main-title span {
     margin-bottom: 40px;
     display: block;
 }
+
 .industries .main-title:after {
     background: #ffffff;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .industries .industries-inner {
-    /* margin-top: 50px; */
-    padding: 50px 0;
+    padding: 50px 0 70px;
     transform: skewY(2deg);
     transform-origin: top left;
     background-image: linear-gradient(180deg, rgba(231, 57, 126, 1) 0%, rgba(95, 34, 129, 1) 100%);

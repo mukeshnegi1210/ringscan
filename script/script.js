@@ -2,10 +2,17 @@ $(function () {
     //   page scroll on primary menu  click 
     $('.primary-menu  ul li a').click(function () {
         get_scroll_id = $(this).attr('data-scroll');
-        $('.primary-menu').removeClass('active');
-        $("html, body").animate({
-            scrollTop: $(get_scroll_id).offset().top - 75
-        }, 600);
+        if (get_scroll_id == "#customer-aquisition") {
+            $("html, body").animate({
+                scrollTop: $(get_scroll_id).offset().top - 140
+            }, 600);
+        }
+        else {
+            $("html, body").animate({
+                scrollTop: $(get_scroll_id).offset().top - 75
+            }, 600);
+        }
+
     });
 
     // contact scroll
@@ -124,7 +131,7 @@ $(function () {
 
 
 
-    
+
     //page animations
 
     AOS.init({

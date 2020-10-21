@@ -183,6 +183,7 @@ header.fixed-header {
     width: 100%;
 }
 
+
 header .header-inner {
     padding: 20px 0;
 }
@@ -229,6 +230,7 @@ header .primary-menu ul li a {
     position: relative;
     background: url(../images/banner-1.png) no-repeat center;
     background-size: cover;
+    padding-bottom: 30px;
 }
 
 .banner-overlay {
@@ -391,10 +393,15 @@ header .primary-menu ul li a {
     animation: marquee2 10s linear infinite;
     animation-delay: 5s;
 }
-.banner .banner-bottom{
-    margin-top: -20px;
+
+.banner .banner-bottom-text {
     position: relative;
-    padding-bottom: 30px;
+    background: url(../images/banner-bottom-bg.png) repeat-x;
+    padding: 7px 0;
+}
+
+.banner .banner-bottom-text h2 {
+    margin-bottom: 0;
 }
 
 @keyframes marquee {

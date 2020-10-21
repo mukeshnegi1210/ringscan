@@ -7,12 +7,7 @@
         top: 80px;
         max-width: 55%;
     }
-    /* .banner-bottom-right .banner-features li img {
-        max-width: 260px;
-    }
-    .banner-bottom-right .banner-features li:last-child{
-        top: -15px;
-    } */
+
 }
 
 @media(max-width:991px) {
@@ -129,7 +124,7 @@
         height: auto;
     }
     .banner .banner-content {
-        padding: 100px 15px 50px;
+        padding: 200px 0 50px;
     }
     .banner .banner-content h1 {
         font-size: 30px;
@@ -156,7 +151,11 @@
     .banner-bottom-content .banner-bottom-right {
         flex: 0 0 100%;
         max-width: 100%;
-        margin-top: 30px;
+        padding: 0;
+    }
+    .banner-bottom-right .banner-features li{
+        margin-bottom: 30px;
+        min-height: auto;
     }
     .banner-mobile {
         position: relative;

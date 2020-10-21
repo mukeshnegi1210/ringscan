@@ -272,9 +272,7 @@ header .primary-menu ul li a {
 
 .banner .banner-content .banner-bottom-content {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    padding-bottom: 30px;
 }
 
 .banner-bottom-content .banner-bottom-left {
@@ -314,27 +312,19 @@ header .primary-menu ul li a {
     min-height: 60px;
 }
 
-.banner-bottom-right .banner-features li:last-child h2{
+.banner-bottom-right .banner-features li:last-child h2 {
     align-items: flex-start;
 }
 
-/* .banner-bottom-right .banner-features li+li {
-    margin-top: 30px;
-} */
-
 .banner-bottom-right .banner-features li img {
-    max-width:300px;
+    max-width: 300px;
 }
 
 .banner-bottom-right .banner-features li .text {
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: calc(50% + 20px); */
     width: 100%;
-    /* transform: translate(-50%, -50%); */
     color: #ffffff;
     margin-bottom: 0;
-    color:#7b3187;
+    color: #7b3187;
     background: #ffffff;
     min-width: 275px;
     min-height: 60px;
@@ -344,11 +334,12 @@ header .primary-menu ul li a {
     border-radius: 25px;
     position: relative;
 }
-.banner-bottom-right .banner-features li .text:after{
+
+.banner-bottom-right .banner-features li .text:after {
     content: "";
     position: absolute;
     bottom: 0;
-    left:-16px;
+    left: -16px;
     border-top: 20px solid transparent;
     border-bottom: 25px solid #ffffff;
     border-right: 20px solid transparent;
@@ -399,6 +390,11 @@ header .primary-menu ul li a {
 .banner-mobile-content h3 span:nth-child(2) {
     animation: marquee2 10s linear infinite;
     animation-delay: 5s;
+}
+.banner .banner-bottom{
+    margin-top: -20px;
+    position: relative;
+    padding-bottom: 30px;
 }
 
 @keyframes marquee {
@@ -464,8 +460,11 @@ footer .footer-content-box ul li {
 }
 
 footer .footer-logo {
-    max-width: 170px;
+    max-width: 200px;
     margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 footer .social-links {
@@ -654,7 +653,7 @@ footer .footer-contacts ul li span {
     padding: 30px 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99999999;
-    display: none;
+    display: none !important;
 }
 
 .cookies-section .cookies-content {

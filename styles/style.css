@@ -226,7 +226,7 @@ header .primary-menu ul li a {
 }
 
 .banner {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     position: relative;
     background: url(../images/banner-1.png) no-repeat center;
     background-size: cover;

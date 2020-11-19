@@ -276,6 +276,9 @@
     .leads p {
         text-align: justify;
     }
+    .how-it-works .video-container {
+        max-width: 90%;
+     }
 }
 
 

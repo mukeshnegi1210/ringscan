@@ -1,15 +1,18 @@
 $(function () {
     //   page scroll on primary menu  click 
-    $('.primary-menu  ul li a').click(function () {
+    $('.primary-menu  ul li a span').click(function () {
         get_scroll_id = $(this).attr('data-scroll');
         if (get_scroll_id == "#customer-aquisition") {
+            $('.primary-menu').removeClass('active');
             $("html, body").animate({
                 scrollTop: $(get_scroll_id).offset().top - 140
             }, 600);
         }
         else {
+            $('.primary-menu').removeClass('active');
+
             $("html, body").animate({
-                scrollTop: $(get_scroll_id).offset().top - 75
+                scrollTop: $(get_scroll_id).offset().top - 60
             }, 600);
         }
 
@@ -130,7 +133,13 @@ $(function () {
     $('.banner-mobile-content h3').width($('.banner-mobile-content h3 span:first-child').width());
 
 
+    // video popup
 
+    $('#btn-work').click(function () {
+        $('#how-it-works').show();
+        $('#how-it-works video').trigger('play');
+    
+    });
 
     //page animations
 

@@ -138,7 +138,10 @@ $(function () {
     $('#btn-work').click(function () {
         $('#how-it-works').show();
         $('#how-it-works video').trigger('play');
-    
+    });
+    $('.btn-close-how-works').click(function(){
+        $('#how-it-works').hide();
+
     });
 
     //page animations

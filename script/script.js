@@ -18,8 +18,20 @@ $(function () {
 
     });
 
+    if (window.location.hash) {
+        scroll(0, 0);
+        setTimeout(function () {
+            scroll(0, 0);
+        }, 1);
+    }
+    if (window.location.hash) {
+        $("html, body").animate({
+            scrollTop: $(window.location.hash).offset().top - 140
+        }, 600);
+    }
+
     // contact scroll
-    $('.header-action .btn-secondary ,.banner-content .btn-secondary').click(function () {
+    $('.header-action .btn-secondary').click(function () {
         $("html, body").animate({
             scrollTop: $('#contact-home').offset().top - 75
         }, 600);
@@ -137,13 +149,28 @@ $(function () {
 
     $('#btn-work').click(function () {
         $('#how-it-works').show();
+        $('#how-it-works video').attr('src', 'videos/how-it-works.mp4');
+
         $('#how-it-works video').trigger('play');
     });
-    $('.btn-close-how-works').click(function(){
+    $('.btn-close-how-works').click(function () {
         $('#how-it-works').hide();
+        $('#how-it-works video').currentTime = 0;
+
+        $('#how-it-works video').trigger('pause');
+        $('#how-it-works video').attr('src', '');
+
 
     });
 
+    // FAQ===============
+    $('.faq-question').click(function () {
+        $('.faq-question').removeClass('active');
+        $('.faq-answer').slideUp(200);
+
+        $(this).addClass('active');
+        $(this).next('.faq-answer').slideDown(200);
+    });
     //page animations
 
     AOS.init({

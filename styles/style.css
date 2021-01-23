@@ -771,7 +771,7 @@ footer .footer-contacts ul li span {
 }
 
 .cookies-content .btn-secondary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: #e91e63;
 }
 

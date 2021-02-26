@@ -147,20 +147,18 @@ $(function () {
 
     // video popup
 
+    var video_url=$('#how-it-works video source').attr('src');
+  
     $('#btn-work').click(function () {
         $('#how-it-works').show();
-        $('#how-it-works video').attr('src', 'videos/how-it-works.mp4');
-
+        $('#how-it-works video').attr('src', video_url);
         $('#how-it-works video').trigger('play');
     });
     $('.btn-close-how-works').click(function () {
         $('#how-it-works').hide();
         $('#how-it-works video').currentTime = 0;
-
         $('#how-it-works video').trigger('pause');
         $('#how-it-works video').attr('src', '');
-
-
     });
 
     // FAQ===============
@@ -179,3 +177,4 @@ $(function () {
         once: true
     });
 });
+

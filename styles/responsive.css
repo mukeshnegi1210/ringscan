@@ -295,6 +295,11 @@
     footer .footer-logo .bottom {
         margin-top: -25px;
     }
+    footer .footer-logo .footer-logo-middle p{
+        font-size: 14px;
+      
+        margin-left: auto;
+    }
 }
 
 
@@ -359,6 +364,8 @@
     }
     footer .footer-logo .footer-logo-middle p{
         font-size: 14px;
+        padding-left: 10px;
+        margin-left: auto;
     }
 }
 
